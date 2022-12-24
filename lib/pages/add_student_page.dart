@@ -72,7 +72,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                   controller: nameController,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please Enter Name';
+                      return 'Please Enter name';
                     }
                     return null;
                   },
