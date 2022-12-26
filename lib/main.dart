@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
       builder: (context, snapshot) {
         // CHeck for Errors
         if (snapshot.hasError) {
-          print("Something went Wrong");
+          print("Algo Salio Mal");
         }
         // once Completed, show your application
         if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
-            title: 'Flutter Firestore CRUD',
+            title: 'Lista De Estudiantes',
             theme: ThemeData(
               primarySwatch: Colors.blue,
             ),
