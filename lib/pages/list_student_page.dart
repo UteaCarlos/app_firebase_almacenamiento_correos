@@ -65,7 +65,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
                           color: Colors.greenAccent,
                           child: Center(
                             child: Text(
-                              'Name',
+                              'Nombre',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
                           color: Colors.greenAccent,
                           child: Center(
                             child: Text(
-                              'Email',
+                              'Correo',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -93,7 +93,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
                           color: Colors.greenAccent,
                           child: Center(
                             child: Text(
-                              'Action',
+                              'Accion',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
