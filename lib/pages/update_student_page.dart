@@ -28,7 +28,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Update Student"),
+        title: Text("Actualizar Estudiante"),
       ),
       body: Form(
           key: _formKey,
@@ -62,7 +62,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         autofocus: false,
                         onChanged: (value) => name = value,
                         decoration: InputDecoration(
-                          labelText: 'Name: ',
+                          labelText: 'Nombre: ',
                           labelStyle: TextStyle(fontSize: 20.0),
                           border: OutlineInputBorder(),
                           errorStyle:
@@ -70,7 +70,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please Enter Name';
+                            return 'Por Favor Ingrese El Nombre';
                           }
                           return null;
                         },
@@ -83,7 +83,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         autofocus: false,
                         onChanged: (value) => email = value,
                         decoration: InputDecoration(
-                          labelText: 'Email: ',
+                          labelText: 'Correo: ',
                           labelStyle: TextStyle(fontSize: 20.0),
                           border: OutlineInputBorder(),
                           errorStyle:
@@ -91,9 +91,9 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please Enter Email';
+                            return 'Por Fabor Ingrese El Correo Electronico';
                           } else if (!value.contains('@')) {
-                            return 'Please Enter Valid Email';
+                            return 'Introduzca Correo Electronico valido';
                           }
                           return null;
                         },
@@ -107,7 +107,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         onChanged: (value) => password = value,
                         obscureText: true,
                         decoration: InputDecoration(
-                          labelText: 'Password: ',
+                          labelText: 'Contraseña: ',
                           labelStyle: TextStyle(fontSize: 20.0),
                           border: OutlineInputBorder(),
                           errorStyle:
@@ -115,7 +115,7 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please Enter Password';
+                            return 'Por Favor Ingrese Contraseña';
                           }
                           return null;
                         },
@@ -134,14 +134,14 @@ class _UpdateStudentPageState extends State<UpdateStudentPage> {
                               }
                             },
                             child: Text(
-                              'Update',
+                              'Actualizar',
                               style: TextStyle(fontSize: 18.0),
                             ),
                           ),
                           ElevatedButton(
                             onPressed: () => {},
                             child: Text(
-                              'Reset',
+                              'Reiniciar',
                               style: TextStyle(fontSize: 18.0),
                             ),
                             style: ElevatedButton.styleFrom(

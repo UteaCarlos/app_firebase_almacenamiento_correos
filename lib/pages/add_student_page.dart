@@ -72,7 +72,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                   controller: nameController,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please Enter Name';
+                      return 'Por Fabor Ingrese El Nombre';
                     }
                     return null;
                   },
@@ -92,9 +92,9 @@ class _AddStudentPageState extends State<AddStudentPage> {
                   controller: emailController,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please Enter Email';
+                      return 'Por Favor ingrese Correo Electronco';
                     } else if (!value.contains('@')) {
-                      return 'Please Enter Valid Email';
+                      return 'Ingrese Correo Electronico Valido';
                     }
                     return null;
                   },
@@ -115,7 +115,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                   controller: passwordController,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please Enter Password';
+                      return 'Por Favor Ingrese Contraseña';
                     }
                     return null;
                   },
@@ -146,7 +146,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                     ElevatedButton(
                       onPressed: () => {clearText()},
                       child: Text(
-                        'Reset',
+                        'Reiniciar',
                         style: TextStyle(fontSize: 18.0),
                       ),
                       style: ElevatedButton.styleFrom(primary: Colors.blueGrey),
