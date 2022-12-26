@@ -37,7 +37,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
 
   // Adding Student
   CollectionReference students =
-      FirebaseFirestore.instance.collection('students');
+      FirebaseFirestore.instance.collection('Estudiantes');
 
   Future<void> addUser() {
     return students
