@@ -50,7 +50,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add New Student"),
+        title: Text("Agregar Nuevo Estudiante"),
       ),
       body: Form(
         key: _formKey,
@@ -63,7 +63,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                 child: TextFormField(
                   autofocus: false,
                   decoration: InputDecoration(
-                    labelText: 'Name: ',
+                    labelText: 'Nombre: ',
                     labelStyle: TextStyle(fontSize: 20.0),
                     border: OutlineInputBorder(),
                     errorStyle:
@@ -83,7 +83,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                 child: TextFormField(
                   autofocus: false,
                   decoration: InputDecoration(
-                    labelText: 'Email: ',
+                    labelText: 'Correo: ',
                     labelStyle: TextStyle(fontSize: 20.0),
                     border: OutlineInputBorder(),
                     errorStyle:
@@ -106,7 +106,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                   autofocus: false,
                   obscureText: true,
                   decoration: InputDecoration(
-                    labelText: 'Password: ',
+                    labelText: 'Contraseña: ',
                     labelStyle: TextStyle(fontSize: 20.0),
                     border: OutlineInputBorder(),
                     errorStyle:
@@ -139,7 +139,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
                         }
                       },
                       child: Text(
-                        'Register',
+                        'Registrar',
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),

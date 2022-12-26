@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('Flutter FireStore CRUD'),
+            Text('Lista De Estudiantes'),
             ElevatedButton(
               onPressed: () => {
                 Navigator.push(
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )
               },
-              child: Text('Add', style: TextStyle(fontSize: 20.0)),
+              child: Text('Adicionar', style: TextStyle(fontSize: 20.0)),
               style: ElevatedButton.styleFrom(primary: Colors.deepPurple),
             )
           ],
